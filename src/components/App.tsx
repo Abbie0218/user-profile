@@ -5,7 +5,11 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 
-export default function UserProfile() {
+interface IProps{
+   list: any
+}
+
+export default function UserProfile(props: IProps) {
 
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
 
@@ -46,8 +50,7 @@ export default function UserProfile() {
                 open={Boolean(anchorEl)}
                 onClose={handleClose}
               >
-                <MenuItem onClick={handleClose}>Profile</MenuItem>
-                <MenuItem onClick={handleClose}>My account</MenuItem>
+                {props.list.map((item: any)=>(<MenuItem onClick={item.functionCall}>{item.label}</MenuItem>))}
               </Menu>
             </div>
           

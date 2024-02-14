@@ -1,6 +1,6 @@
 {
   "name": "user-profile-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -36,6 +36,7 @@
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.15.10",
-    "@mui/material": "^5.15.10"
+    "@mui/material": "^5.15.10",
+    "tslib": "^2.6.2"
   }
 }
