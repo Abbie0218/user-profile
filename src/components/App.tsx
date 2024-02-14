@@ -51,7 +51,7 @@ export default function UserProfile(props: IProps) {
                 open={Boolean(anchorEl)}
                 onClose={handleClose}
               >
-                {props.list.map((item: any)=>(<MenuItem onClick={item.functionCall}>{item.label}</MenuItem>))}
+                {props.list.map((item: any)=>(<MenuItem onClick={handleClose}>{item.label}</MenuItem>))}
               </Menu>
             </div>
           
