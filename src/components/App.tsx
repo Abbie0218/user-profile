@@ -6,7 +6,8 @@ import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 
 interface IProps{
-   list: any
+   list: any,
+   floatPosition: any
 }
 
 export default function UserProfile(props: IProps) {
@@ -22,7 +23,7 @@ export default function UserProfile(props: IProps) {
   };
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1, float:props.floatPosition }}>
         
             <div>
               <IconButton
